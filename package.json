@@ -3,14 +3,33 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.0",
+    "ejs": "^2.6.1",
     "express": "^4.16.4",
-    "mongoose": "^5.3.5"
-  }
+    "mocha": "^5.2.0",
+    "mongodb": "^3.1.9",
+    "mongoose": "^5.3.5",
+    "morgan": "^1.9.1",
+    "object-assign": "^4.1.1"
+  },
+  "engine": {
+    "node": "*",
+    "npm": "*"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/a4441834/nodejs-openshift.git"
+  },
+  "author": "Steve Speicher <sspeiche@gmail.com>",
+  "license": "CC-BY-1.0",
+  "bugs": {
+    "url": "http://github.com/a4441834/nodejs-openshift/issues"
+  },
+  "homepage": "http://github.com/a4441834/nodejs-openshift"
 }
