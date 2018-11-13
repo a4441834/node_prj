@@ -7,7 +7,7 @@ var employeeController = require('./controllers/employeeController');
 var app = express();
 app.use(bodyparser.json());
 
-var port = 3000;
+var port = 8080;
 app.listen(port, ()=> console.log('Server Started at port:' +port));
 
 app.use('/employees', employeeController);
