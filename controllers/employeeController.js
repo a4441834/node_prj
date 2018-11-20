@@ -28,11 +28,11 @@ router.put('/:id', (req, res) => {
         return res.status(400).send(`No record with given id : ${req.params.id}`);
     
     var emp = {
-        firstname: req.body.name,
-        lastname: req.body.position,
-        address: req.body.office,
-        phone: req.body.salary,
-        email: req.body.group,
+        firstname: req.body.firstname,
+        lastname: req.body.lastname,
+        address: req.body.address,
+        phone: req.body.phone,
+        phone: req.body.phone,
      }; 
      Employee.findByIdAndUpdate(req.params.id, { $set: emp }, {new: true}, (err, doc) => {
          if(!err) {res.send(doc); }
@@ -53,11 +53,11 @@ router.delete('/:id', (req, res) => {
 
 router.post('/', (req, res)=> {
     var emp = new Employee({
-        firstname: req.body.name,
-        lastname: req.body.position,
-        address: req.body.office,
-        phone: req.body.salary,
-        email: req.body.group,
+        firstname: req.body.firstname,
+        lastname: req.body.lastname,
+        address: req.body.address,
+        phone: req.body.phone,
+        phone: req.body.phone,
     });  
     emp.save((err, doc)=> {
         if(!err) {res.send(doc); }
