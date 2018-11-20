@@ -10,4 +10,4 @@ app.use(bodyparser.json());
 var port = 8080;
 app.listen(port, ()=> console.log('Server Started at port:' +port));
 
-app.use('/identifty/profile', employeeController);
+app.use('/identity/profile', employeeController);
