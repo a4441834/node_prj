@@ -32,7 +32,8 @@ router.put('/:id', (req, res) => {
         lastname: req.body.lastname,
         address: req.body.address,
         phone: req.body.phone,
-        phone: req.body.phone,
+        email: req.body.email,
+        officelocation: req.body.officelocation,
      }; 
      Employee.findByIdAndUpdate(req.params.id, { $set: emp }, {new: true}, (err, doc) => {
          if(!err) {res.send(doc); }
@@ -57,7 +58,8 @@ router.post('/', (req, res)=> {
         lastname: req.body.lastname,
         address: req.body.address,
         phone: req.body.phone,
-        phone: req.body.phone,
+        email: req.body.email,
+        officelocation: req.body.officelocation,
     });  
     emp.save((err, doc)=> {
         if(!err) {res.send(doc); }
