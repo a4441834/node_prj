@@ -20,16 +20,19 @@ var Employee = mongoose.model('Employee', {
 			   }
             ],
     contact: [{ 
-				phone: [{   
+		phone: [{   
                 cell: {type: Number},
                 home: {type: Number},
                 office: {type: Number}, 
-                }]},
-               { email: [{
+                }]
+               },
+               { 
+		 email: [{
                  personal: {type: String} ,
                  office: {type: String}, 
-                }]} 
-			],
+                }]
+	       } 
+	   ],
                
     customertype: {type: String},
     customerstatus: {type: String},
