@@ -34,6 +34,8 @@ router.put('/:id', (req, res) => {
         phone: req.body.phone,
         email: req.body.email,
         officelocation: req.body.officelocation,
+        customertype: req.body.customertype,
+        customerstatus: req.body.customerstatus,
      }; 
      Employee.findByIdAndUpdate(req.params.id, { $set: emp }, {new: true}, (err, doc) => {
          if(!err) {res.send(doc); }
@@ -60,6 +62,8 @@ router.post('/', (req, res)=> {
         phone: req.body.phone,
         email: req.body.email,
         officelocation: req.body.officelocation,
+        customertype: req.body.customertype,
+        customerstatus: req.body.customerstatus,
     });  
     emp.save((err, doc)=> {
         if(!err) {res.send(doc); }
