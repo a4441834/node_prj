@@ -16,26 +16,26 @@ var Employee = mongoose.model('Employee', {
                 street: {type: String},
                 city: {type: String},
                 state: {type: String},
-                zip: {type: Number},
+                zip: {type: Number}
 			   }
             ],
     contact: [{ 
 		phone: [{   
                 cell: {type: Number},
                 home: {type: Number},
-                office: {type: Number}, 
+                office: {type: Number} 
                 }]
                },
                { 
 		 email: [{
                  personal: {type: String} ,
-                 office: {type: String}, 
+                 office: {type: String} 
                 }]
 	       } 
 	   ],
                
     customertype: {type: String},
-    customerstatus: {type: String},
+    customerstatus: {type: String}
 
 });
 
