@@ -5,14 +5,14 @@ var Employee = mongoose.model('Employee', {
     lastname: {type: String},
     address: [
                { 
-                addresstype: { type: string},
+                addresstype: { type: String},
                 street: {type: String},
                 city: {type: String},
                 state: {type: String},
                 zip: {type: Number}
                },
 			   {
-                addresstype: { type: string},
+                addresstype: { type: String},
                 street: {type: String},
                 city: {type: String},
                 state: {type: String},
